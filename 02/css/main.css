@@ -133,5 +133,98 @@ body {
     position: absolute;
     left: 0px;
     top: 0px;
-    background-color: aliceblue
+    background-color: aliceblue;
+    color: #fff;
+}
+
+.block1, .block2, .block3 {
+    padding: 20px;
+    width: 29%;
+    height: 383px;
+    position: relative;
+}
+
+.block1 {
+    float: left
+}
+.block2 {
+    float: left
+}
+.block3 {
+    float: right
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8 {
+    width: 100px;
+    height: 130px;
+    margin: 10px;
+    display: inline-table;
+    border-radius: 12px;
+    text-align: center;
+    padding-top: 20px; 
+    position: absolute;
+}
+.box1 {
+    background-color: purple;
+}
+
+.box2 {
+    background-color: #0095ff;
+    right: 40px;
+}
+
+.box3 {
+    background-color: orange;
+    left: 21px;
+    bottom: 47px;
+}
+
+.box4 {
+    background-color: red;
+    bottom: 47px;
+    right: 40px;
+}
+
+.box5 {
+    background-color: #800023;
+    display: none;
+}
+
+.box6 {
+    background-color: #090973;
+    right: 40px;
+}
+
+.box7 {
+    background-color: #ff778f;
+    bottom: 47px;
+}
+
+.box8 {
+    background-color: #c13e00;
+    bottom: 47px;
+    right: 40px;
+}
+
+.act1, .act2, .act3, .act4 {
+    width: 100px;
+    height: 60px;
+    display: inline-table;
+    margin: 10px;
+    border-radius: 12px;
+    text-align: center;
+    padding-top: 20px; 
+}   
+
+.act1, .act2 {
+    background-color: green;
+}
+
+
+.act3, .act4 {
+    background-color: #c7c742;
+}
+
+.act1:active ~ .box1 {
+    color: #fff;
 }

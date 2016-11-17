@@ -39,6 +39,10 @@
                         stroke-width: 0.5;
                     }
 
+                    .land:hover{
+                        fill: #6565f5;
+                    }
+
            
                 </style>
 
@@ -140,6 +144,9 @@
     <script src="js/jquery.ui.touch-punch.min.js"></script>
     <script>
         $(function () {
+            $('.land').click(function() {
+                $(this).css({fill: 'red'});
+            });
         });
     </script>
 </body>

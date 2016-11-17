@@ -202,7 +202,62 @@
     <script src="js/hammer.js"></script>
     <script>
         $(function () {
-           
+           $('.parentSlider').slider({
+                slide: function( event, ui ) {
+                    $('.Layer4').css('left', ui.value+'%');
+                    $('.textFooter').text(ui.value);
+                    if (ui.value>=10) {
+                        $('.Layer14').css('display', 'block');
+                    }else {
+                        $('.Layer14').css('display', 'none');
+                    }
+                    if (ui.value>=20) {
+                        $('.Layer13').css('display', 'block');
+                    }else {
+                        $('.Layer13').css('display', 'none');
+                    }
+                    if (ui.value>=30) {
+                        $('.Layer12').css('display', 'block');
+                    }else {
+                        $('.Layer12').css('display', 'none');
+                    }
+                    if (ui.value>=40) {
+                        $('.Layer11').css('display', 'block');
+                    }else {
+                        $('.Layer11').css('display', 'none');
+                    }
+                    if (ui.value>=50) {
+                        $('.Layer10').css('display', 'block');
+                    }else {
+                        $('.Layer10').css('display', 'none');
+                    }
+                    if (ui.value>=60) {
+                        $('.Layer9').css('display', 'block');
+                    }else {
+                        $('.Layer9').css('display', 'none');
+                    }
+                    if (ui.value>=70) {
+                        $('.Layer8').css('display', 'block');
+                    }else {
+                        $('.Layer8').css('display', 'none');
+                    }
+                    if (ui.value>=80) {
+                        $('.Layer7').css('display', 'block');
+                    }else {
+                        $('.Layer7').css('display', 'none');
+                    }
+                    if (ui.value>=90) {
+                        $('.Layer6').css('display', 'block');
+                    }else {
+                        $('.Layer6').css('display', 'none');
+                    }
+                    if (ui.value>=100) {
+                        $('.Layer5').css('display', 'block');
+                    }else {
+                        $('.Layer5').css('display', 'none');
+                    }
+                }
+           });
         });
     </script>
 </body>

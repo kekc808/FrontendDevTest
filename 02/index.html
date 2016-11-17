@@ -11,14 +11,49 @@
 </head>
 <body>
     <div id="background">
-
+        <div class="block1">
+            <div class="box1">Css3 FadeIn FadeOut</div>
+            <div class="box2">Css3 Transform Rotate</div>
+            <div class="box3">Css3 Transform Scale</div>
+            <div class="box4">Css3 Transition Move</div>
+        </div>
+        <div class="block2">
+            <div class="act1">Css Start</div>
+            <div class="act2">Jquery Start</div>
+            <div class="act3">Css Reset</div>
+            <div class="act4">Jquery Reset</div>
+        </div>
+        <div class="block3">
+            <div class="box5">Jquery FadeIn</div>
+            <div class="box6">Jquery FadeOut</div>
+            <div class="box7">Jquery Animate</div>
+            <div class="box8">Jquery Zoom</div>
+        </div>
+        <div style="clear: left"></div>
     </div>
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/jquery-ui-1.10.4.min.js"></script>
     <script src="js/jquery.ui.touch-punch.min.js"></script>
     <script>
         $(function () {
-           
+            $('.act2').click(function() {
+                $('.box5').fadeIn();
+                $('.box6').fadeOut();
+                $('.box7').animate({
+                    left: '-138px',
+                    bottom: '-100px'
+                },600)
+                $('.box8').css({transform: 'scale(1.5,1.5)', transition: 'all .8s'});
+            })
+             $('.act4').click(function() {
+                $('.box5').fadeOut();
+                $('.box6').fadeIn();
+                $('.box7').animate({
+                    left: '21px',
+                    bottom: '47px'
+                },600)
+                $('.box8').css('transform', 'scale(1,1)');
+            })
         });
     </script>
 </body>

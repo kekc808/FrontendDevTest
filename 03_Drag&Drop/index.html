@@ -24,7 +24,31 @@
     <script src="js/jquery.ui.touch-punch.min.js"></script>
     <script>
         $(function () {
+            var i = 0; 
 
+            $('.gift').draggable({
+                revert: 'invalid',
+                cursor: 'move',
+
+            });
+            $('.img6').droppable({
+                drop: function( event, ui ) {
+                    deleteGift( ui.draggable );
+                    i++;
+                    afterDrop();
+                }
+            })
+
+            function deleteGift( $item ) {
+                $item.hide('drop', {direction: 'down'});
+            }
+            function afterDrop() {
+                if (i == 4) {
+                    $('.bg').css('background-image', 'url("../images/bg11.jpg")');
+                    $('.img7').delay(500).animate({left: '0'}, 2000);
+                    $('.img8').css('display', 'block').animate({opacity: '1'}, 1000);
+                }
+            }
         });
     </script>
 </body>

@@ -32,7 +32,10 @@
     <script src="js/jquery.ui.touch-punch.min.js"></script>
     <script>
         $(function () {
-           
+           var example = document.getElementById("#screen"),
+                ctx = example.getContext('2d');
+            ctx.fillRect(0, 0, example.width, example.height);
+           }
         });
     </script>
 </body>

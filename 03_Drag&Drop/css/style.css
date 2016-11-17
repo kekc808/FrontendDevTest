@@ -132,8 +132,10 @@ body{
             width: 315px;
             left: 653px;
             top: 188px;
+            position: absolute;
             height:300px;
             display: none;
+            opacity: 0;
             background:#db7575;
         }
 
