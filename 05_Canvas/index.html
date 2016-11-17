@@ -32,10 +32,22 @@
     <script src="js/jquery.ui.touch-punch.min.js"></script>
     <script>
         $(function () {
-           var example = document.getElementById("#screen"),
-                ctx = example.getContext('2d');
-            ctx.fillRect(0, 0, example.width, example.height);
-           }
+           var canvas = document.getElementById("screen");
+            if (canvas.getContext){
+                var context = canvas.getContext("2d");
+ 
+                context.strokeRect(30,30,150,70);
+                context.font = "bold 15px Arial";
+                context.textAlign = "center";
+                context.textBaseline = "middle";
+                context.fillText("Hello world!", 105, 65);
+                context.moveTo(20, 20);
+                context.lineTo(200, 120);
+                context.stroke();
+            }
+            else {
+                alert('Ваш браузер не поддерживает canvas')
+            }
         });
     </script>
 </body>
