@@ -1,0 +1,149 @@
+body {
+	background-image: url(img/bg.png);
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+.top-line {
+	background-image: url(img/firm-element.png);
+	height: 211px;
+	background-repeat: no-repeat;
+}
+
+.top-text {
+	font-size: 32px;
+	padding-top: 32px;
+	padding-left: 59px;
+	display: block;
+	font-family: Arial;
+	color: #2D509B;
+	font-stretch: ultra-condensed;
+}
+
+.visual-data {
+	width: 320px;
+	margin: auto;
+	position: relative;
+}
+.first-data {
+	width: 320px;
+	margin-top: -56px;
+}
+.first-data span {
+	position: absolute;
+	bottom: 50px;
+	right: 76px;
+	font-size: 47px;
+	font-stretch: ultra-condensed;
+	font-family: Arial;
+	color: #fff;
+}
+
+.second-data {
+	position: absolute;
+	top: 40px;
+	left: 3px;
+}
+
+.second-data span {
+	position: absolute;
+	bottom: 88px;
+	left: 90px;
+	color: #fff;
+	font-size: 36px;
+	font-stretch: ultra-condensed;
+	font-family: Arial;
+}
+
+.third-data {
+	position: absolute;
+	top: 62px;
+	right: 9px;
+}
+
+.third-data span {
+	position: absolute;
+	color: #fff;
+	font-size: 36px;
+	bottom: 49px;
+	left: 61px;
+	font-stretch: ultra-condensed;
+	font-family: Arial;
+}
+
+.slider {
+	width: 700px;
+	margin: 27px auto;
+}
+
+.item {
+	margin-top: 40px;
+}
+
+.num-pat span, .kras span, .nras span {
+	color: #D37538;
+	font-size: 24px;
+	font-stretch: ultra-condensed;
+	font-family: Arial;
+}
+
+.num-pat .slide-data {
+	position: absolute;
+	width: 355px;
+	height: 16px;
+	background-image: url(img/slide-bg1.png);
+	left: 524px;
+    top: 529px;
+}
+
+.kras .slide-data {
+	position: absolute;
+	width: 355px;
+	height: 16px;
+	background-image: url(img/slide-bg1.png);
+	left: 524px;
+	top: 594px;
+}
+
+.nras .slide-data {
+	position: absolute;
+	width: 355px;
+	height: 16px;
+	background-image: url(img/slide-bg1.png);
+	left: 524px;
+	top: 665px;
+}
+
+.num-pat .slide-control, .kras .slide-control, .nras .slide-control {
+	background-image: url(img/slide-control.png);
+	width: 53px;
+	height: 38px;
+	position: absolute;
+	left: 0;
+	top: -7px;
+}
+
+.num-pat .slide-control span, .kras .slide-control span, .nras .slide-control span {
+	position: absolute;
+	top: -28px;
+	left: 13px;
+}
+
+.num-pat .slide-data .slide-after {
+    height: 16px;
+    background-color: #F2D5B7;
+    width: 0%;
+}
+
+.kras .slide-data .slide-after {
+	height: 16px;
+    background-color: #DD7628;
+    width: 0%;
+}
+
+.nras .slide-data .slide-after {
+	height: 16px;
+    background-color: #DEB682;
+    width: 0%;
+}
