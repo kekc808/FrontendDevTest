@@ -13,7 +13,7 @@
     <div id="background">
         <div class="block1">
             <div class="box1">Css3 FadeIn FadeOut</div>
-            <div class="box2">Css3 Transform Rotate</div>
+            <div class="box2"><span>Css3 Transform Rotate</span></div>
             <div class="box3">Css3 Transform Scale</div>
             <div class="box4">Css3 Transition Move</div>
         </div>
@@ -53,6 +53,22 @@
                     bottom: '47px'
                 },600)
                 $('.box8').css('transform', 'scale(1,1)');
+            })
+
+             $('.act1').click(function() {
+                $('.box1').css({opacity: '1', transition: 'all .8s'});
+                $('.box2').css({transform: 'rotate(180deg)', transition: 'all .8s'})
+                $('.box2 span').css({'transform': 'rotate(180deg)', 'margin-top': '63px'})
+                $('.box3').css({'transform': 'scale(1.5,1.5)', transition: 'all .8s'})
+                $('.box4').css({'transform': 'translate(100px, 100px)', transition: 'all .8s'})
+            })
+
+             $('.act3').click(function() {
+                $('.box1').css({opacity: '0', transition: 'all .8s'});
+                $('.box2').css({transform: 'rotate(0deg)', transition: 'all .8s'})
+                $('.box2 span').css({'transform': 'rotate(0deg)', 'margin-top': '0'})
+                $('.box3').css({'transform': 'scale(1,1)', transition: 'all .8s'})
+                $('.box4').css({'transform': 'translate(0, 0)', transition: 'all .8s'})
             })
         });
     </script>

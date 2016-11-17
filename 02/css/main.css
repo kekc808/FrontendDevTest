@@ -166,11 +166,16 @@ body {
 }
 .box1 {
     background-color: purple;
+    opacity: 0;
 }
 
 .box2 {
     background-color: #0095ff;
     right: 40px;
+}
+
+.box2 span {
+    display: block;
 }
 
 .box3 {
@@ -223,8 +228,4 @@ body {
 
 .act3, .act4 {
     background-color: #c7c742;
-}
-
-.act1:active ~ .box1 {
-    color: #fff;
 }
