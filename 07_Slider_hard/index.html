@@ -14,6 +14,19 @@
     <script src="js/jquery.ui.touch-punch.min.js"></script>
     <script>
         $(function () {
+            $('.drag_red').draggable({
+                axis: 'y',
+                drag: function() {
+
+                }
+            });
+
+            var yellow = $('.yellow').css().width;
+            console.log(yellow[2])
+            var i = 0;
+            for (i; i<yellow.length; i++){
+                console.log(yellow[i]);
+            }
         });
     </script>
 </head>
