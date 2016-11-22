@@ -15,6 +15,57 @@
     <script>
         $(function () {
 
+
+            // setInterval( function() {
+
+            //     var hours = new Date().getHours();
+            //     var mins = new Date().getMinutes();
+            //     var hdegree = hours * 30 + (mins / 2);
+            //     var hrotate = 'rotate(' + hdegree + 'deg)';
+
+            //     $('.arr_hour').css({"-moz-transform" : hrotate, "-webkit-transform" : hrotate});
+
+            // }, 1000);
+
+            // setInterval( function() {
+
+            //     var mins = new Date().getMinutes();
+            //     var mdegree = mins * 6;
+            //     var mrotate = 'rotate(' + mdegree + 'deg)';
+
+            //     $('.arr_minute').css({"-moz-transform" : mrotate, "-webkit-transform" : mrotate});
+
+            // }, 1000);
+            var i = 0;
+            var h = 0;
+            var c = 0;
+
+            setInterval( function() {
+
+                if (i == 60 && c < 15) {
+                    h++;
+                    i = 1;
+                    c++;
+                    
+                }
+                if (c < 15) {
+                    i++;
+                } else {
+                    i = 0;
+                    console.log(i);
+                    console.log(h);
+                }
+                mdegree = i * 6;
+                hdegree = h * 30 + (i / 2);
+                var mrotate = 'rotate(' + mdegree + 'deg)';
+                var hrotate = 'rotate(' + hdegree + 'deg)';
+                $('.arr_hour').css({"-moz-transform" : hrotate, "-webkit-transform" : hrotate});
+                $('.arr_minute').css({"-moz-transform" : mrotate, "-webkit-transform" : mrotate});
+                
+            }, 10);
+
+
+
         });
     </script>
 </head>

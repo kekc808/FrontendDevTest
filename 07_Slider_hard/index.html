@@ -16,17 +16,30 @@
         $(function () {
             $('.drag_red').draggable({
                 axis: 'y',
-                drag: function() {
+                drag: function(event, ui) {
 
+
+                    var yellow = $('.yellow');
+
+                    for(var i = 0; i<yellow.length; i++) {
+                        if((ui.position.top+90) >= (yellow[i].offsetTop - 50) && (ui.position.top+90) <= yellow[i].offsetTop) {
+                            yellow[i].style.backgroundImage = 'url("images/refract/man_red.png")';
+                        } else {
+                            yellow[i].style.backgroundImage = 'url("images/refract/man_white.png")';
+                        }
+                        // console.log(yellow[i].offsetTop);
+                    }
+                    
+                    // $('.yellow').css({'background-image' : 'url("images/refract/man_red.png")'});
                 }
             });
 
-            var yellow = $('.yellow').css().width;
-            console.log(yellow[2])
-            var i = 0;
-            for (i; i<yellow.length; i++){
-                console.log(yellow[i]);
-            }
+            // var yellow = $('.yellow');
+            // console.log(yellow);
+            // var i = 0;
+            // for (i; i<yellow.length; i++){
+            //     console.log(yellow[i].offset);
+            // };
         });
     </script>
 </head>
